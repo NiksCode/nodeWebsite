@@ -1,0 +1,2 @@
+to go back to the history: git revert --no-commit 9726aa6ece3dd030ba5fdfadeca3f128b76e9f5e..HEAD
+nodemon 

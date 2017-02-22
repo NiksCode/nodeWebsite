@@ -1,0 +1,45 @@
+<% include ./partials/header %> 
+
+
+        
+        <div class="container">
+  <h2>Contact requests</h2>
+  <p>This table will show you all the contact requests</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+         <th>Phone</th>
+          <th>Address</th>
+           <th>City</th>
+            <th>State</th>
+             <th>Zip</th>
+              <th>Website</th>
+               <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% contacts.forEach(function(post){ %>
+            
+              <tr>
+              <td> <%= post.first_name %></td> 
+               <td>    <%= post.last_name %></td> 
+                <td>    <%= post.email %> </td> 
+                 <td>  <%= post.phone %></td> 
+                 <td>   <%= post.address %></td> 
+                  <td>  <%= post.city %></td> 
+                 <td>   <%= post.state %> </td> 
+                  <td>  <%= post.zip %></td> 
+                  <td> <%= post.website %></td> 
+                  <td>  <%= post.comment %></td> 
+                </tr>
+           
+        <% }); %>
+    </tbody>
+  </table>
+</div>
+
+        
+<% include ./partials/footer %> 
